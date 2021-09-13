@@ -1,0 +1,80 @@
+#minhafoto{
+    border-radius: 50%;
+    margin-top: 2%;
+    width: 20%;
+    border-style: solid;
+    border-color: rgb(116, 177, 19);
+}
+header{
+    position:static;
+}
+
+#quemsou{
+    text-align:center;
+    min-width: min-content;
+}
+#container{
+    color: rgb(2, 2, 2);
+    
+    box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 15%);
+    width: 300px;
+    max-width: 100%;
+
+    margin-left: 30%;
+}
+.redesocial{
+    color: rgb(116, 177, 19);
+    padding: 0 3px;
+}
+.perfil{
+    display:-ms-flexbox;
+}
+.btn-vejamais{
+    background-color: blue;
+    border-radius: 10rem;
+    margin: 0 10px;
+    padding: 10px 50px;
+    border-style:hidden;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+
+}
+.btn-vejamais:hover{
+    background-color: white;
+    color: blue;
+}
+.projetos{
+    border-style:solid;
+    padding: 10px;
+
+}
+body{
+    background-color: rgb(240, 199, 149);
+}
+h2{
+    text-align: center;
+    text-decoration: double;
+}
+h3{
+    margin: 0;
+}
+h4{
+    margin: 2px 0px 0px 0px ;
+}
+section{
+    display: flex;
+    flex-direction:initial;
+    position:unset;
+}
+footer{
+    background-color: rgb(24, 24, 92);
+    border-radius: 3rem 3rem 0 0;
+    padding: 5px;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(161, 134, 14);
+    position:static;
+}
+
+
