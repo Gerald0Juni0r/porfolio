@@ -1,71 +1,31 @@
-#minhafoto{
-    border-radius: 50%;
-    margin-top: 2%;
-    width: 20%;
-    border-style: solid;
-    border-color: rgb(116, 177, 19);
+body{
+    /* background-color: rgba(0, 0, 0, 0.664); */
+    color: rgba(236, 221, 221, 0.87);
+    align-items: center;
+    margin: 0;
+    background:url('https://wallpaperaccess.com/download/abstract-digital-art-546481');
+    
 }
 header{
     position:static;
-}
-
-#quemsou{
-    text-align:center;
-    min-width: min-content;
-}
-#container{
-    color: rgb(2, 2, 2);
-    
-    box-shadow: 0 10px 15px -3px rgb(125 59 236 / 10%), 0 4px 6px -2px rgb(125 59 236 / 15%);
-    width: 300px;
-    max-width: 100%;
-
-    margin-left: 30%;
-}
-.redesocial{
-    color: rgb(116, 177, 19);
-    padding: 0 3px;
-}
-.perfil{
-    display:-ms-flexbox;
-}
-.btn-vejamais{
-    background-color: blue;
-    border-radius: 10rem;
-    margin: 0 10px;
-    padding: 10px 50px;
-    border-style:hidden;
-    color: white;
-    cursor: pointer;
-    width: 250px;
-
-}
-.btn-vejamais:hover{
-    background-color: white;
-    color: blue;
-}
-.projetos{
-    border-style:solid;
-    padding: 10px;
-
-}
-body{
-    background-color: rgb(240, 199, 149);
 }
 h2{
     text-align: center;
     text-decoration: double;
 }
-h3{
+h1{
     margin: 0;
+    padding: 10px 0;
 }
 h4{
     margin: 2px 0px 0px 0px ;
 }
-section{
-    display: flex;
-    flex-direction:initial;
-    position:unset;
+h5{
+    text-align: center;
+    margin: 0;
+}
+h6{
+    margin: 0;
 }
 footer{
     background-color: rgb(24, 24, 92);
@@ -74,7 +34,119 @@ footer{
     text-align: center;
     flex-direction: column;
     color: rgb(161, 134, 14);
-    position:static;
+    margin-top: 2%;
+
+    position:relative;
+    bottom:0;
 }
 
+/* IDs */
+#minhafoto{
+    border-radius: 50%;
+    margin-top: 2%;
+    width: 90%;
+    border-style: solid;
+    color: rgb(161, 134, 14);
+}
+#perfil{
+    width: 100px;
+}
+#quemsou{
+    width: 250px;
+    padding: 0 0 0 10px;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+}
+#github, #linkedin, #instagram{
+    padding:0 8px;
+}
+#HTML5, #CSS, #JavaScript{
+    padding: 5px 15px 0px 20px;
+     
+    color: white;
+    
+}
+#projetos{
+    display: flex;
+    justify-content: space-around;  
+}
+#skills{
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    border-radius: 30px;   
+}
 
+/* Classes */
+.redesocial{
+    color: rgb(161, 134, 14);
+    padding: 0 px;
+    /* margin: 0 4px 0 6px; */
+}
+.btn-vejamais{
+    background-color: rgb(24, 24, 92);
+    border-radius: 10rem;
+    margin: 0 10px;
+    padding: 10px 50px;
+    border-style:hidden;
+    color: white;
+    cursor: pointer;
+}
+.btn-vejamais:hover{
+    background-color: white;
+    color: rgb(24, 24, 92);
+}
+.skills{
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    margin: 0 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.projetos{
+    border-style:solid;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    #projetos {
+      flex-direction: column;
+      display: contents;
+      text-align: center;
+      padding: 10px 0px;
+    }
+    ul{
+        text-align: left;
+    }
+    .btn-vejamais{
+        width: 90%;
+    }
+    .projetos{
+        margin: 5%;
+    }
+    .skills{
+        margin: 2px;
+        width: 60px;
+        height: 50px;
+        flex-direction: column;
+        display: flex;
+    }
+    #github, #linkedin, #instagram{
+        padding:0 5px;
+    }
+    #container{
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+  }
