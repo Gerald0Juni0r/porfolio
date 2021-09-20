@@ -1,10 +1,7 @@
 body{
-    background-color: rgba(0, 0, 0, 0.664);
-    color: rgba(236, 221, 221, 0.87);
     align-items: center;
     margin: 0;
-    background:url('https://wallpaperaccess.com/download/abstract-digital-art-546481');
-    
+    background:-webkit-linear-gradient(rgb(176, 184, 248), rgb(96, 96, 245));
 }
 header{
     position:static;
@@ -29,16 +26,17 @@ h6{
 }
 footer{
     background-color: rgb(24, 24, 92);
+    color: rgba(228, 215, 215);
     border-radius: 3rem 3rem 0 0;
     padding: 5px;
     text-align: center;
     flex-direction: column;
-    color: rgb(161, 134, 14);
     margin-top: 2%;
 
     position:relative;
     bottom:0;
 }
+
 
 /* IDs */
 #minhafoto{
@@ -46,7 +44,7 @@ footer{
     margin-top: 2%;
     width: 90%;
     border-style: solid;
-    color: rgb(161, 134, 14);
+    color: rgba(25, 9, 114);
 }
 #perfil{
     width: 100px;
@@ -65,16 +63,14 @@ footer{
 }
 #github, #linkedin, #instagram{
     padding:0 8px;
+    color: black;
 }
-#HTML5, #CSS, #JavaScript{
+#HTML5, #CSS, #JavaScript, #bootstrap{
     padding: 5px 15px 0px 20px;
-     
-    color: white;
-    
 }
 #projetos{
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
 }
 #skills{
     display: flex;
@@ -82,12 +78,17 @@ footer{
     padding: 10px;
     border-radius: 30px;   
 }
+#btn-restaurante{
+    margin-top: 10%;
+}
+#icon-skills, #icon-projetos{
+    padding-right: 1%;
+}
 
 /* Classes */
 .redesocial{
-    color: rgb(161, 134, 14);
+    color: rgb(228, 215, 215);
     padding: 0 px;
-    /* margin: 0 4px 0 6px; */
 }
 .btn-vejamais{
     background-color: rgb(24, 24, 92);
@@ -117,6 +118,10 @@ footer{
     padding: 10px;
     border-radius: 30px;
 }
+.title-list{
+    display: flex;
+}
+
 
 /* Mobile */
 @media (max-width: 900px) {
@@ -149,4 +154,8 @@ footer{
         margin-top: 4%;
         margin-left: 3%;
     }
+    /* .title-list{
+        display: flex;
+        text-align: start;
+    } */
   }
