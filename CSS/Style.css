@@ -1,3 +1,4 @@
+/* HTML */
 body{
     align-items: center;
     margin: 0;
@@ -6,13 +7,17 @@ body{
 header{
     position:static;
 }
+h1{
+    margin: 0;
+    padding: 10px 0;
+}
 h2{
     text-align: center;
     text-decoration: double;
 }
-h1{
+h3{
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
 }
 h4{
     margin: 2px 0px 0px 0px ;
@@ -84,6 +89,9 @@ footer{
 #icon-skills, #icon-projetos{
     padding-right: 1%;
 }
+#coluna1, #coluna2{
+    display: flex ;
+}
 
 /* Classes */
 .redesocial{
@@ -94,7 +102,7 @@ footer{
     background-color: rgb(24, 24, 92);
     border-radius: 10rem;
     margin: 0 10px;
-    padding: 10px 50px;
+    padding: 10px 70px;
     border-style:hidden;
     color: white;
     cursor: pointer;
@@ -121,18 +129,31 @@ footer{
 .title-list{
     display: flex;
 }
-
+.img-projetos{
+    width: 200px;
+}
+.title-projetos{
+    text-align: center;
+    display: flex;
+}
 
 /* Mobile */
 @media (max-width: 900px) {
+    ul{
+        text-align: left;
+    }
     #projetos {
       flex-direction: column;
       display: contents;
       text-align: center;
       padding: 10px 0px;
     }
-    ul{
-        text-align: left;
+    #github, #linkedin, #instagram{
+        padding:0 5px;
+    }
+    #container{
+        margin-top: 4%;
+        margin-left: 3%;
     }
     .btn-vejamais{
         width: 90%;
@@ -144,18 +165,15 @@ footer{
         margin: 2px;
         width: 60px;
         height: 50px;
-        flex-direction: column;
-        display: flex;
+       
     }
-    #github, #linkedin, #instagram{
-        padding:0 5px;
+  }
+  @media (max-width: 500px) {
+    #skills{
+        display: inline-block;
+        text-align: center;
     }
-    #container{
-        margin-top: 4%;
-        margin-left: 3%;
+    #coluna1, #coluna2{
+        display: inline-flex;
     }
-    /* .title-list{
-        display: flex;
-        text-align: start;
-    } */
   }
