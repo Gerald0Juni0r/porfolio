@@ -29,17 +29,16 @@ h5{
 h6{
     margin: 0;
 }
-footer{
+footer {
     background-color: rgb(24, 24, 92);
     color: rgba(228, 215, 215);
     border-radius: 3rem 3rem 0 0;
     padding: 5px;
     text-align: center;
-    flex-direction: column;
     margin-top: 2%;
-
-    position:relative;
-    bottom:0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -52,22 +51,22 @@ footer{
     color: rgba(25, 9, 114);
 }
 #perfil{
-    width: 100px;
+    width: 20%;
+    margin: 1%;
 }
 #quemsou{
-    width: 250px;
-    padding: 0 0 0 10px;
+    margin-top: 2%;
+    width: 90%;
+    padding: 0 0 0 2%;
 }
 #container{
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-left: 2%;
+    margin: 0 20%;
+    padding: 2%;
 }
 #github, #linkedin, #instagram{
-    padding:0 8px;
+    padding: 0 10% 0 10%;
     color: black;
 }
 #HTML5, #CSS, #JavaScript, #bootstrap{
@@ -92,6 +91,9 @@ footer{
 #coluna1, #coluna2{
     display: flex ;
 }
+/* #footer{
+    
+} */
 
 /* Classes */
 .redesocial{
@@ -141,41 +143,63 @@ footer{
 
 /* Mobile */
 @media (max-width: 900px) {
-    ul{
-        text-align: left;
-    }
+    
     #projetos {
-      flex-direction: column;
-      display: contents;
-      text-align: center;
-      padding: 10px 0px;
-    }
-    #github, #linkedin, #instagram{
-        padding:0 5px;
+      padding: 1% 0px;
     }
     #container{
-        margin-top: 4%;
-        margin-left: 3%;
+     align-items: center;
+    }
+    #github, #linkedin, #instagram{
+        padding: 0 5% 0 5%;
+        color: black;
+    }
+    .projetos{
+        margin: 1%;
+        padding: 2%;
     }
     .btn-vejamais{
         width: 90%;
-    }
-    .projetos{
-        margin: 5%;
     }
     .skills{
         margin: 2px;
         width: 60px;
         height: 50px;
-       
     }
   }
   @media (max-width: 500px) {
+
+    h5 {
+        font-size: x-small;
+    }
+    #container{
+        margin: 0 2% 0 5%;;
+        padding: 0 3%;
+    }
+    #projetos{
+        display: grid;
+        justify-content: center;
+    }
+    #quemsou{
+        width: 220px;
+    }
+    #github, #linkedin, #instagram{
+        padding: 0 3% 0 4%;
+        color: black;
+    }
     #skills{
-        display: inline-block;
+        display:flex;
         text-align: center;
     }
     #coluna1, #coluna2{
         display: inline-flex;
+    }
+    .redes-sociais{
+        font-size: small;
+        /* margin: 0 2%; */
+    }
+    .projetos{
+        
+        padding: 6%;
     }
   }
