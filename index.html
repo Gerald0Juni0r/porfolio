@@ -4,46 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Portfólio | Geraldo Júnior</title>
+    <link rel="shortcut icon" href="IMG/titleLogo.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="geral.css">
 </head>
 <body>
     <header>
-        <img src="IMG/logo.png" alt="logomarca escrito 'Geraldo Júnior'">
-        <nav>
-            <a>Inicio</a>
-            <a>Sobre mim</a>
-            <a>Projetos</a>
-            <a>Habilidades</a>
-            <a>Contato</a>
+        <img class="cabecalho" src="IMG/logo.png" alt="logomarca escrito 'Geraldo Júnior'">
+        <nav class="cabecalho">
+            <a class="menu">Inicio</a>
+            <a class="menu">Sobre mim</a>
+            <a class="menu">Projetos</a>
+            <a class="menu">Habilidades</a>
+            <a class="menu">Contato</a>
         </nav>
     </header>
-    <main>
-        <section class="section-home">
+    <main class="conteudo">
+        <section class="conteudo-home">
             <div>
-                <p>Olá 👋, eu sou</p>
-                <p>GERALDO JÚNIOR</p>
-                <p>Desenvolvedor WEB</p>
+                <p class="conteudo-home-paragrafo">Olá 👋, eu sou</p>
+                <p class="conteudo-home-paragrafo-nome">GERALDO JÚNIOR</p>
+                <p class="conteudo-home-paragrafo">Desenvolvedor WEB</p>
             </div>
-            <img src="IMG/Memoji-PC.png" alt="Meu memoji usando um MacBook">
+            <img class="conteudo-home-memoji" src="IMG/Memoji/Memoji-PC.png" alt="Meu memoji usando um MacBook">
         </section>
-        <section class="section-sobre-mim">
-            <h2>SOBRE MIM</h2>
+        <section class="conteudo-sobre-mim">
+            <p class="title">SOBRE MIM</p>
+            <div class="conteudo-sobre-mim-div-principal">
+                <img class="conteudo-sobre-mim-memoji" src="IMG/Memoji/Memoji-sorrindo.png" alt="Meu memoji sorrindo">
+                <div>
+                    <p class="conteudo-sobre-mim-paragrafo">
+                        Me chamo Geraldo Júnior, estou cursando Bacharelado em Sistemas de Informação pela UNINASSAU.
+                    </p>
+                    <p class="conteudo-sobre-mim-paragrafo">
+                        Possuo formação extracurricular pelo Programa Com.Domínio Digital 4.0, com evidência em desenvolvimento de Soft Skills, Hard Skills e inserção em Tech.
+                    </p>
+                    <p class="conteudo-sobre-mim-paragrafo">
+                        Busco atuar na área de tecnologia, contribuindo com minhas habilidades e competências de forma responsável na condição de colaborador efetivo ou temporário.
+                    </p>
+                    <button class="conteudo-sobre-mim-button">CURRÍCULO<img src="IMG/icone-download.png" alt="icone de download"></button>
+                </div>
+            </div>
+            
         </section>
-        <section class="section-projetos">
-            <h2>PROJETOS</h2>
+        <section class="conteudo-projetos">
+            <p class="title">PROJETOS</p>
+            <section class="conteudo-div-projetos">
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-guess-number.png" alt="Print do site Guess Number">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-restaurante.png" alt="Print do site Restaurante">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-star-devs.png" alt="Print do site Star Devs">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-login-helper.png" alt="Print do site Login Helper">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-guess-number.png" alt="">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-restaurante.png" alt="">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-star-devs.png" alt="">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+                <div class="projetos">
+                    <img class="projetos-imagem" src="IMG/projetos/projeto-login-helper.png" alt="">
+                    <button class="projetos-button">VER MAIS</button>
+                </div>
+            </section>
         </section>
-        <section class="section-habilidades">
-            <h2>HABILIDADES</h2>
+        <section class="conteudo-habilidades">
+            <p class="title">HABILIDADES</p>
+            <section class="conteudo-habilidades-com-img">
+                <div class="conteudo-div-skills">
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/html-5-144.png" alt="logo HTML 5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/css3-144.png" alt="logo CSS 3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/python.png" alt="logo Python">
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/Java.png" alt="logo Java">
+                        <span>JAVA</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/JavaScript.png" alt="logo JavaScript">
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/Bootstrap.png" alt="logo Bootstrap">
+                        <span>BOOTSTRAP</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/php.png" alt="logo PHP">
+                        <span>PHP</span>
+                    </div>
+                    <div class="skills">
+                        <img class="skills-imagem" src="IMG/habilidades/mysql.png" alt="logo MySQL">
+                        <span>MYSQL</span>
+                    </div>
+                </div>
+                <img class="conteudo-habilidades-imagem" src="IMG/Memoji/Memoji-piscando-olho.png" alt="Meu memoji piscando o olho">
+            </section>   
         </section>
-        <section class="section-contato">
-            <h2>CONTATO</h2>
+        <section class="conteudo-contato">
+            <p class="title">CONTATO</p>
+            <img src="IMG/Memoji/Memoji-ligando.png" alt="Meu memoji ligando">
+            <section>
+                <p>
+                    GOSTOU DO MEU PORTFÓLIO 
+                    E QUER SABER MAIS SOBRE MIM?    
+
+                    ENTÃO, ME SEGUE NAS REDES SOCIAIS:
+                </p>
+                <div class="redes-sociais">
+                    <img src="IMG/redesSociais/github.png" alt="logo GitHub">
+                    <span>GITHUB</span>
+                </div>
+                <div class="redes-sociais">
+                    <img src="IMG/redesSociais/instagram.png" alt="logo Instagram">
+                    <span>INSTAGRAM</span>
+                </div>
+                <div class="redes-sociais">
+                    <img src="IMG/redesSociais/linkedin.png" alt="Logo LinkedIn">
+                    <span>LINKEDIN</span>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
         <p>Desenvolvido com ❤️ por Geraldo Júnior</p>
     </footer>
+    <div id="arrow">
+        <img src="IMG/Arrow.png" alt="Seta para voltar ao inicio">
+    </div>
 </body>
 </html>
