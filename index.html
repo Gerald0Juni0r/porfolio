@@ -16,13 +16,16 @@
 </head>
 <body>
     <header>
-        <img class="cabecalho" src="IMG/logo.png" alt="logomarca escrito 'Geraldo Júnior'">
-        <nav class="cabecalho">
+        <img class="logo-cabecalho" src="IMG/logo.png" alt="logomarca escrito 'Geraldo Júnior'">
+        <nav id="menu-desktop" class="cabecalho">
             <a href="#" class="menu">Inicio</a>
-            <a data-target="" href="#SobreMim" class="menu">Sobre mim</a>
-            <a data-target="" href="#Projetos" class="menu">Projetos</a>
-            <a data-target="" href="#Habilidades" class="menu">Habilidades</a>
-            <a data-target="" href="#Contato" class="menu">Contato</a>
+            <a href="#SobreMim" class="menu">Sobre mim</a>
+            <a href="#Projetos" class="menu">Projetos</a>
+            <a href="#Habilidades" class="menu">Habilidades</a>
+            <a href="#Contato" class="menu">Contato</a>
+        </nav>
+        <nav class="menu-mobile">
+            <button id="menu-mobile-button"><img id="menu-mobile-button-imagem" src="IMG/menuMobile/menuMobile-closed.png" alt=""></button>
         </nav>
     </header>
     <main class="conteudo">
@@ -54,36 +57,36 @@
             <p id="Projetos" class="title">PROJETOS</p>
             <section class="conteudo-div-projetos">
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-guess-number.png" alt="Print do site Guess Number">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/guessNumber.jpg" alt="Projeto Guess Number">
+                    <a href="https://gerald0juni0r.github.io/GuessNumber/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-restaurante.png" alt="Print do site Restaurante">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/barbeariaAlura.jpg" alt="Projeto Barbearia Alura">
+                    <a href="https://gerald0juni0r.github.io/barbeariaAlura/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-star-devs.png" alt="Print do site Star Devs">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/starDevs.jpg" alt="Projeto Star Devs">
+                    <a href="https://gerald0juni0r.github.io/StarDevs/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-login-helper.png" alt="Print do site Login Helper">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/canvasPatinho.jpg" alt="Projeto desenho de um pato no canvas">
+                    <a href="https://gerald0juni0r.github.io/CanvasDoPatinho/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-guess-number.png" alt="">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/restaurante.jpg" alt="Projeto Restaurante">
+                    <a href="https://gerald0juni0r.github.io/Site-Restaurante/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-restaurante.png" alt="">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/NoticiasCidade.jpg" alt="Projeto Noticias da Cidade">
+                    <a href="https://gerald0juni0r.github.io/Noticias-da-cidade/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-star-devs.png" alt="">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/alvo.jpg" alt="Projeto acerte o alvo">
+                    <a href="https://gerald0juni0r.github.io/meu-primeiro-jogo/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
                 <div class="projetos">
-                    <img class="projetos-imagem" src="IMG/projetos/projeto-login-helper.png" alt="">
-                    <button class="projetos-button">VER MAIS</button>
+                    <img class="projetos-imagem" src="IMG/projetos/loginHelper.jpg" alt="Projeto Login Helper">
+                    <a href="https://gerald0juni0r.github.io/Login-Helper/"><button class="projetos-button">VER MAIS</button></a>
                 </div>
             </section>
         </section>
@@ -91,38 +94,14 @@
             <p id="Habilidades" class="title">HABILIDADES</p>
             <section class="conteudo-habilidades-com-img">
                 <div class="conteudo-div-skills">
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/html-5-144.png" alt="logo HTML 5">
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/css3-144.png" alt="logo CSS 3">
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/python.png" alt="logo Python">
-                        <span>PYTHON</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/Java.png" alt="logo Java">
-                        <span>JAVA</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/JavaScript.png" alt="logo JavaScript">
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/Bootstrap.png" alt="logo Bootstrap">
-                        <span>BOOTSTRAP</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/php.png" alt="logo PHP">
-                        <span>PHP</span>
-                    </div>
-                    <div class="skills">
-                        <img class="skills-imagem" src="IMG/habilidades/mysql.png" alt="logo MySQL">
-                        <span>MYSQL</span>
-                    </div>
+                    <img class="skills-imagem" src="IMG/habilidades/html-5.png" alt="logo HTML 5">
+                    <img class="skills-imagem" src="IMG/habilidades/css-3.png" alt="logo CSS 3">
+                    <img class="skills-imagem" src="IMG/habilidades/python.png" alt="logo Python">
+                    <img class="skills-imagem" src="IMG/habilidades/Java.png" alt="logo Java">
+                    <img class="skills-imagem" src="IMG/habilidades/JavaScript.png" alt="logo JavaScript">
+                    <img class="skills-imagem" src="IMG/habilidades/Bootstrap.png" alt="logo Bootstrap">
+                    <img class="skills-imagem" src="IMG/habilidades/php.png" alt="logo PHP">
+                    <img class="skills-imagem" src="IMG/habilidades/mysql.png" alt="logo MySQL">
                 </div>
                 <img class="conteudo-habilidades-imagem" src="IMG/Memoji/Memoji-piscando-olho.png" alt="Meu memoji piscando o olho">
             </section>   
@@ -152,13 +131,15 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
         </section>
     </main>
     <footer>
         <p>Desenvolvido com ❤️ por Geraldo Júnior</p>
     </footer>
-    <a class="div-arrow visible" href="#"><img class="div-arrow-img" src="IMG/Arrow.png" alt="Seta para voltar ao inicio"></a>
+    <a data-scroll="suave" data-anima="scroll" class="div-arrow visible" href="#">
+        <img class="div-arrow-img" src="IMG/Arrow.png" alt="Seta para voltar ao inicio">
+    </a>
+    <script src="JS/app.js"></script>
 </body>
 </html>

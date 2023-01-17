@@ -36,12 +36,19 @@ header nav a {
 header nav a:first-child {
     padding-left: 0;
 }
-.cabecalho {
+.logo-cabecalho {
     margin: 20px 0;
 }
 .menu {
     text-decoration: none;
     color: #000000;
+}
+#menu-desktop {
+    display: flex;
+    align-items: center;
+}
+.menu-mobile {
+    display: none;
 }
 /* HOME */
 .conteudo {
@@ -140,11 +147,14 @@ header nav a:first-child {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 25px 0 25px;
-    margin-bottom: 100px;
+    margin: 2%;
 }
 .projetos-imagem{
-    padding: 10px 10px 30px 10px ;
+    margin: 10px;
+    /* padding: 10px 10px 30px 10px ; */
+    width: 200px;
+    height: 180px;
+    border-radius: 10%;
 }
 .projetos-button {
     background: rgba(108, 117, 125, 1);
@@ -164,13 +174,13 @@ header nav a:first-child {
 /* HABILIDADES */
 .conteudo-habilidades {
     background: rgba(206, 212, 218, 1);
+    padding: 2% 0;
 }
 .conteudo-div-skills {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 9% 6%;
-    padding: 0 1%;
+    margin: 10% 5%;
 }
 .conteudo-habilidades-com-img {
     display: flex;
@@ -186,8 +196,8 @@ header nav a:first-child {
     flex-direction: column;
 }
 .skills-imagem {
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
 }
 /* CONTATO */
 .conteudo-contato {
@@ -267,4 +277,379 @@ footer {
     height: 27px;
 
     margin: 20% 30%;
+}
+
+/* MOBILE */
+@media (max-width: 999px) {
+    /* Para sections -> Sobre mim, Projetos, Habilidades e Contato */
+    .title {
+        padding-top: 0;
+    }
+    /* Cabeçalho */
+    #menu-desktop {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    #menu-mobile-button {
+        background-color: transparent;
+    }
+    #menu-mobile-button-imagem {
+        height: 30px;
+        margin-top: 25%;
+    }
+    .menu-mobile-section {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 200px;
+        margin-top: 50%;
+    }
+    .menu {
+        padding: 10%;
+    }
+    .logo-cabecalho {
+        width: 100px;
+        height: 15px;
+        margin: 2%;
+    }
+    /* HOME - MOBILE */
+    .conteudo-home-paragrafo {
+        font-size: 20px;
+    }
+    .conteudo-home-paragrafo-nome {
+        font-size: 70px;
+    }
+    .conteudo-home-memoji {
+        width: 250px;
+        height: 400px;
+        margin: 5% 20% 0;
+    }
+    .conteudo-home {
+        display: grid;
+        padding: 2% 5% 3%;
+    }
+    /* SOBRE MIM - MOBILE */
+    .conteudo-sobre-mim-memoji {
+        width: 180px;
+        height: 280px;
+        margin: 4% 25% 0;
+    }
+    .conteudo-sobre-mim-paragrafo {
+        font-size: 14px;
+        width: 350px;
+        height: 250px;
+        text-align: justify;
+    }
+    .conteudo-sobre-mim-button {
+        width: 250px;
+        height: 50px;
+        margin: 0 15% 3%;
+    }
+    .conteudo-sobre-mim {
+        padding: 3% 5%;
+    }
+    .conteudo-sobre-mim-div-principal {
+        display: grid;
+    }
+    /* PROJETOS - MOBILE */
+    .conteudo-projetos {
+        padding: 3% 5%;
+    }
+    .projetos {
+        margin: 5%;
+    }
+    /* HABILIDADES - MOBILE */
+    .conteudo-habilidades {
+        padding: 3% 5%;
+    }
+    .conteudo-div-skills {
+        margin: 0 25%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills {
+        margin: 3%;
+    }
+    .conteudo-habilidades-imagem {
+        width: 200px;
+        height: 200px;
+        margin: 10% 20%;
+    }
+    .conteudo-habilidades-com-img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    /* CONTATO - MOBILE */
+    .conteudo-contato {
+        padding: 3% 5%;
+    }
+    .conteudo-contato-memoji {
+        width: 200px;
+        height: 200px;
+        margin: 12% 20%;
+    }
+    .conteudo-contato-principal {
+        flex-direction: column
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 95%;
+        right: 1%;
+        top: 92%;
+        bottom: 2%;
+    }
+    .div-arrow-img {
+        width: 20px;
+        height: 20px;
+        margin: 25%;
+    }
+}
+@media (max-width: 900px) {
+    .conteudo-div-skills {
+        padding: 0;
+    }
+    .conteudo-div-skills {
+        padding: 0;
+        margin: 0 22%;
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 93.5%;
+        right: 2%;
+        top: 92%;
+        bottom: 2%;
+    }
+    .div-arrow-img {
+        width: 20px;
+        height: 20px;
+        margin: 20% 25%;
+    }
+}
+@media (max-width: 800px) {
+    /* CABEÇALHO */
+    #menu-mobile-button-imagem {
+        margin-top: 10%;
+    }
+    /* SOBRE MIM - MOBILE */
+    .conteudo-sobre-mim-memoji {
+        width: 180px;
+        height: 280px;
+        margin: 4% 25% 0;
+    }
+    .conteudo-sobre-mim-paragrafo {
+        font-size: 14px;
+        width: 350px;
+        height: 250px;
+        text-align: justify;
+    }
+    .conteudo-sobre-mim-button {
+        width: 250px;
+        height: 50px;
+        margin: 0 15% 3%;
+    }
+    .conteudo-sobre-mim {
+        padding: 4% 5% 3%;
+    }
+    .conteudo-sobre-mim-div-principal {
+        display: grid;
+    }
+    /* HABILIDADES - MOBILE */
+    .conteudo-habilidades {
+        padding: 5% 0;
+    }
+    .conteudo-div-skills {
+        padding: 0;
+        margin: 0 22%;
+    }
+    .skills {
+        margin: 3%;
+    }
+    .conteudo-habilidades-imagem {
+        width: 200px;
+        height: 200px;
+        margin: 10% 20%;
+    }
+    .conteudo-habilidades-com-img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    /* CONTATO - MOBILE */
+    .conteudo-contato {
+        padding: 10% 5%;
+    }
+    .conteudo-contato-memoji {
+        width: 200px;
+        height: 200px;
+        margin: 12% 20%;
+    }
+    .conteudo-contato-principal {
+        flex-direction: column
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 93%;
+        right: 2%;
+        top: 93.5%;
+        bottom: 2%;
+    }
+    .div-arrow-img {
+        width: 20px;
+        height: 20px;
+        margin: 20% 25%;
+    }
+}
+@media (max-width: 715px) {
+    /* HOME - MOBILE */
+    .conteudo-home {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    /* HABILIDADES - MOBILE */
+    .conteudo-div-skills {
+        padding: 0;
+        margin: 0 15%;
+    }
+    /* CONTATO -MOBILE */
+    .conteudo-contato {
+        padding-top: 4%;
+        padding-bottom: 10%;
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 92%;
+        top: 92.5%;
+    }
+    .div-arrow-img {
+        margin: 20% 22%;
+    }
+}
+@media (max-width: 575px) { 
+    .logo-cabecalho {
+        margin: 3% 0;
+    }
+    /* HOME - MOBILE */
+    .conteudo-home {
+        padding-top: 20%;
+        padding-bottom: 1%;
+    }
+    .conteudo-home-paragrafo {
+        font-size: 15px;
+        margin-top: -5%;
+    }
+    .conteudo-home-paragrafo-nome {
+        font-size: 40px;
+        margin-top: -5%;
+    }
+    .conteudo-home-memoji {
+        margin: 10% 0 30% 0;
+    }
+    /* SOBRE MIM - MOBILE */
+    .conteudo-sobre-mim {
+        padding: 5% 0 5%;
+    }
+    .conteudo-sobre-mim-button {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+    /* PROJETOS - MOBILE */
+    .conteudo-projetos {
+        padding: 5% 0;
+    }
+    /* HABILIDADES - MOBILE */
+    .conteudo-habilidades {
+        padding: 5% 0;
+    }
+    .conteudo-div-skills {
+        margin: 0 5%;
+    }
+    /* CONTATO - MOBILE */
+    .conteudo-contato {
+        padding: 5% 0 15%;
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 90%;
+        right: 2%;
+        top: 93.5%;
+        bottom: 2%;
+    }
+    .div-arrow-img {
+        width: 20px;
+        height: 20px;
+        margin: 10% 25%;
+    }
+}
+@media (max-width: 375px) {
+    /* HOME - MOBILE */
+    .conteudo-home {
+        padding-top: 20%;
+    }
+    .conteudo-home-paragrafo {
+        font-size: 15px;
+        margin-top: -5%;
+    }
+    .conteudo-home-paragrafo-nome {
+        font-size: 40px;
+        margin-top: -5%;
+    }
+    .conteudo-home-memoji {
+        margin: 10% 0 30% 0;
+    }
+    /* SOBRE MIM - MOBILE */
+    .conteudo-sobre-mim {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .conteudo-sobre-mim-memoji {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .conteudo-sobre-mim-paragrafo {
+        font-size: 12px;
+        width: 300px;
+        height: 230px;
+        text-align: justify;
+    }
+    .conteudo-sobre-mim-button {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    /* PROJETOS - MOBILE */
+    .conteudo-projetos {
+        padding: 10% 0 5%;
+    }
+    /* HABILIDADES - MOBILE */
+    .conteudo-habilidades {
+        padding: 10% 0 4%;
+    }
+    .conteudo-div-skills {
+        margin: 0 20%;
+        display: contents;
+    }
+    /* CONTATO - MOBILE */
+    .conteudo-contato {
+        padding: 15% 0 10%;
+    }
+    /* BOTÃO VOLTA PRA O TOPO */
+    .div-arrow {
+        left: 89%;
+        right: 2%;
+        top: 93%;
+        bottom: 2%;
+    }
+    .div-arrow-img {
+        width: 20px;
+        height: 20px;
+        margin: 20% 20%;
+    }
 }
