@@ -20,7 +20,7 @@ body {
     background: #161f50;
 }
 .title {
-    padding-top: 1.5%;
+    margin-top: 1%;
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -66,7 +66,7 @@ header nav a:first-child {
     color: #CED4DA;
     position: relative;
 }
-/* Acrescenta linha embaixo */
+/* ANIMAÇÃO DO MENU */
 .menu::after {
     content: "";
     width: 0%;
@@ -93,9 +93,6 @@ header nav a:first-child {
     cursor: pointer;
 }
 /* HOME */
-.conteudo {
-    border-top: 0.5px solid #DEE2E6;
-}
 .conteudo-home {
     animation: gradient 2s ease-in-out alternate infinite;
     background: linear-gradient(-45deg, #02010A, #04052E,#240046, #140152) no-repeat;
@@ -118,7 +115,7 @@ header nav a:first-child {
 .conteudo-home-memoji {
     width: 270px;
     height: 440px;
-    margin: 12% 0 8%;
+    margin: 12% 0 6%;
 }
 .conteudo-home-paragrafo {
     font-family: 'Roboto Mono', monospace;
@@ -171,6 +168,8 @@ header nav a:first-child {
     justify-content: space-around;
 }
 .conteudo-sobre-mim-memoji {
+    /* animation: animate__fadeInUp 1s normal; */
+
     width: 290px;
     height: 460px;
     margin: 10% 0 9%;
@@ -184,7 +183,6 @@ header nav a:first-child {
     width: 400px;
     height: 300px;
 }
-
 /* PROJETOS */
 .conteudo-projetos {
     padding: 4% 0 13%;
@@ -256,7 +254,7 @@ header nav a:first-child {
 .conteudo-contato-memoji {
     width: 420px;
     height: 420px;
-    margin: 12% 0 10%;
+    margin: 9% 0 10%;
 }
 .conteudo-contato-principal{
     display: flex;
@@ -302,10 +300,13 @@ header nav a:first-child {
 }
 /* FOOTER */
 footer {
-    background: #240046;
+    background: transparent;
 
     text-align: center;
     padding: 20px 0;
+}
+#copyright {
+    font-size: small;
 }
 /* BOTÃO VOLTA PRA O TOPO */
 .div-arrow-img {
@@ -328,6 +329,29 @@ footer {
     to {
         transform: translateY(15px);
     }
+}
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+/* Animação de surgimento das informações de cada section */
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+[data-anime="bottom"] {
+    transform: translate3d(-100px, 0, 0);
+}
+[data-anime="left"] {
+    transform: translate3d(-100px, 0, 0);
+}
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /* Altura da tela de desktops de até 635px */

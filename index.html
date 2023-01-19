@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="geral.css">
+
+    <!-- Biblioteca de animação -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
@@ -47,11 +50,11 @@
             <img class="conteudo-home-memoji" src="IMG/Memoji/Memoji-PC.png" alt="Meu memoji usando um MacBook">
         </section>
         <section class="conteudo-sobre-mim">
-            <p id="SobreMim" class="title">SOBRE MIM</p>
+            <p data-anime="top" id="SobreMim" class="title">SOBRE MIM</p>
             <div class="conteudo-sobre-mim-div-principal">
-                <img class="conteudo-sobre-mim-memoji" src="IMG/Memoji/Memoji-sorrindo.png" alt="Meu memoji sorrindo">
+                <img data-anime="left" class="conteudo-sobre-mim-memoji" src="IMG/Memoji/Memoji-sorrindo.png" alt="Meu memoji sorrindo">
                 <div>
-                    <p class="conteudo-sobre-mim-paragrafo">
+                    <p data-anime="right" class="conteudo-sobre-mim-paragrafo">
                         Me chamo Geraldo Júnior, estou cursando Bacharelado em Sistemas de Informação pela UNINASSAU.
                         <br><br>
                         Possuo formação extracurricular pelo Programa Com.Domínio Digital 4.0, com evidência em desenvolvimento de Soft Skills, Hard Skills e inserção em Tech.
@@ -62,8 +65,8 @@
             </div>
         </section>
         <section class="conteudo-projetos">
-            <p id="Projetos" class="title">PROJETOS</p>
-            <section class="conteudo-div-projetos">
+            <p data-anime="top" id="Projetos" class="title">PROJETOS</p>
+            <section data-anime="bottom" class="conteudo-div-projetos">
                 <div class="projetos">
                     <a class="projetos-link" href="https://gerald0juni0r.github.io/GuessNumber/">
                         <img class="projetos-imagem" src="IMG/projetos/guessNumber.jpg" alt="Projeto Guess Number">
@@ -107,9 +110,9 @@
             </section>
         </section>
         <section class="conteudo-habilidades">
-            <p id="Habilidades" class="title">HABILIDADES</p>
+            <p data-anime="top" id="Habilidades" class="title">HABILIDADES</p>
             <section class="conteudo-habilidades-com-img">
-                <div class="conteudo-div-skills">
+                <div data-anime="left" class="conteudo-div-skills">
                     <img class="skills-imagem" src="IMG/habilidades/html-5.png" alt="logo HTML 5">
                     <img class="skills-imagem" src="IMG/habilidades/css-3.png" alt="logo CSS 3">
                     <img class="skills-imagem" src="IMG/habilidades/python.png" alt="logo Python">
@@ -119,14 +122,14 @@
                     <img class="skills-imagem" src="IMG/habilidades/php.png" alt="logo PHP">
                     <img class="skills-imagem" src="IMG/habilidades/mysql.png" alt="logo MySQL">
                 </div>
-                <img class="conteudo-habilidades-imagem" src="IMG/Memoji/Memoji-piscando-olho.png" alt="Meu memoji piscando o olho">
+                <img data-anime="right" class="conteudo-habilidades-imagem" src="IMG/Memoji/Memoji-piscando-olho.png" alt="Meu memoji piscando o olho">
             </section>   
         </section>
         <section class="conteudo-contato">
-            <p id="Contato" class="title">CONTATO</p>
+            <p data-anime="top" id="Contato" class="title">CONTATO</p>
             <section class="conteudo-contato-principal">
-                <img class="conteudo-contato-memoji" src="IMG/Memoji/Memoji-ligando.png" alt="Meu memoji ligando">
-                <div class="conteudo-contato-paragrafo-com-redes-sociais">
+                <img data-anime="left" class="conteudo-contato-memoji" src="IMG/Memoji/Memoji-ligando.png" alt="Meu memoji ligando">
+                <div data-anime="right" class="conteudo-contato-paragrafo-com-redes-sociais">
                     <p class="conteudo-contato-paragrafo">
                         GOSTOU DO MEU PORTFÓLIO <br>
                         E QUER SABER MAIS SOBRE MIM? <br><br>
@@ -152,6 +155,7 @@
     </main>
     <footer>
         <p>Desenvolvido com ❤️ por Geraldo Júnior</p>
+        <p id="copyright">© Copyright 2023</p>
     </footer>
     <a data-scroll="suave" data-anima="scroll" href="#">
         <img class="div-arrow-img" src="IMG/Arrow.png" alt="Seta para voltar ao inicio">
