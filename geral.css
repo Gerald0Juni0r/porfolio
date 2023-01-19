@@ -6,10 +6,18 @@
     text-decoration: none;
     border: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* BODY */
 body {
     /* Se algo passar do tamanho ideal, não ficará vísivel */
     overflow-x: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    color: #CED4DA;
+
+    background: #161f50;
 }
 .title {
     padding-top: 1.5%;
@@ -18,17 +26,31 @@ body {
     font-size: 40px;
     text-align: center;
 }
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+    /* BARRA MAIOR */
+::-webkit-scrollbar-track {
+    background-color: rgb(3, 3, 95);
+}
+    /* BARRA MENOR */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(71, 109, 212);
+    border-radius: 40px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 68, 255);
+}
 /* CABEÇALHO */
 header {
-    background: #ADB5BD;
-    
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 header nav a {
-    padding-left: 10px;
-
+    margin-left: 10px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -41,30 +63,57 @@ header nav a:first-child {
 }
 .menu {
     text-decoration: none;
-    color: #000000;
+    color: #CED4DA;
+    position: relative;
+}
+/* Acrescenta linha embaixo */
+.menu::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #CED4DA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu:hover::after {
+    width: 100%;
 }
 #menu-desktop {
     display: flex;
     align-items: center;
 }
-.menu-mobile {
+.menu-mobile, .menu-mobile-section {
     display: none;
 }
 .menu-mobile-abrir,
 .menu-mobile-fechar {
     display: none;
+    cursor: pointer;
 }
 /* HOME */
 .conteudo {
     border-top: 0.5px solid #DEE2E6;
 }
 .conteudo-home {
-    background: #ADB5BD;
+    animation: gradient 2s ease-in-out alternate infinite;
+    background: linear-gradient(-45deg, #02010A, #04052E,#240046, #140152) no-repeat;
+    background-size: 300% 300%;
 
+    color: #CED4DA;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+@keyframes gradient {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
 }
 .conteudo-home-memoji {
     width: 270px;
@@ -78,7 +127,7 @@ header nav a:first-child {
 }
 .conteudo-home-paragrafo-carreira {
     margin-top: -4%;
-    border-right: 2px solid rgba(3, 3, 3, 0.75);
+    border-right: 3px solid #CED4DA;
     font-size: 25px;
     width: 260px;
     height: 35px;
@@ -114,7 +163,6 @@ header nav a:first-child {
 /* SOBRE MIM */
 .conteudo-sobre-mim {
     padding: 3% 0;
-    background: #CED4DA;
 }
 .conteudo-sobre-mim-div-principal {
     display: flex;
@@ -132,37 +180,13 @@ header nav a:first-child {
     font-weight: 400;
     font-size: 18px;
 
+    text-align: justify;
     width: 400px;
     height: 300px;
 }
-.conteudo-sobre-mim-button {
-    
-    background: #6C757D;
-    border-radius: 30px;
-    box-shadow: 0 10px 4px 0 #00000040;
 
-    margin: 6% 10%;
-    width: 320px;
-    height: 60px;
-    
-    padding-right: 15px;
-
-    font-family: 'Mulish';
-    font-weight: 700;
-    font-size: 15px;
-    color: #DEE2E6;
-    align-items: center;
-    cursor: pointer;
-}
-.conteudo-sobre-mim-button img {
-    position: absolute;
-}
-.conteudo-sobre-mim-button:hover {
-    background: #495057;
-}
 /* PROJETOS */
 .conteudo-projetos {
-    background: #ADB5BD;
     padding: 4% 0 13%;
 }
 .conteudo-div-projetos {
@@ -177,7 +201,7 @@ header nav a:first-child {
     list-style: none;
 } 
 .projetos {
-    background: #CED4DA;
+    background: #88ABFF;
     border-radius: 10%;
     display: flex;
     align-items: center;
@@ -201,22 +225,20 @@ header nav a:first-child {
 }
 /* HABILIDADES */
 .conteudo-habilidades {
-    background: rgba(206, 212, 218, 1);
-    padding: 4% 0 2%;
+    padding: 4% 0 10%;
 }
 .conteudo-div-skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 10% 5%;
+    margin: 5% 0 0 8%;
 }
 .conteudo-habilidades-com-img {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .conteudo-habilidades-imagem {
-    width: 420px;
-    height: 440px;
-    margin: 5% 0;
+    width: 350px;
+    height: 400px;
+    margin-right: 5%;
 }
 .skills {
     display: flex;
@@ -229,7 +251,6 @@ header nav a:first-child {
 }
 /* CONTATO */
 .conteudo-contato {
-    background: rgba(173, 181, 189, 1);
     padding: 3% 0 1%;
 }
 .conteudo-contato-memoji {
@@ -281,7 +302,8 @@ header nav a:first-child {
 }
 /* FOOTER */
 footer {
-    background: rgba(108, 117, 125, 1);
+    background: #240046;
+
     text-align: center;
     padding: 20px 0;
 }
@@ -292,6 +314,20 @@ footer {
     height: 40px;
     right: 3%;
     bottom: 5%;
+
+    animation: arrowAnimation 1s ease-in-out infinite;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.div-arrow-img.active {
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes arrowAnimation {
+    to {
+        transform: translateY(15px);
+    }
 }
 
 /* Altura da tela de desktops de até 635px */
@@ -357,20 +393,38 @@ footer {
     #menu-mobile-button {
         background-color: transparent;
     }
-    #menu-mobile-button-imagem {
+    #menu-mobile-button-img {
         height: 30px;
         margin-top: 25%;
+        color: #CED4DA;
     }
     .menu-mobile-section {
-        background: #fff;
+        display: none;
+        padding-top: 1.2rem;
+        position: relative;
+        /* background: #fff;
+        width: 200px;
+        margin-top: 50%; */
+    }
+    .menu-mobile-section a {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: 200px;
-        margin-top: 50%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10% 0;
+    }
+    .open {
+        display: block;
     }
     .menu {
+        color: red;
         padding: 10%;
+        position: absolute;
+        /* height: calc(100vh - 60px);
+        top: 60px;
+        right: 0px; */
+        
+
     }
     .logo-cabecalho {
         width: 100px;
@@ -396,6 +450,7 @@ footer {
     .conteudo-home {
         display: grid;
         padding: 2% 5% 3%;
+        
     }
     /* SOBRE MIM - MOBILE */
     .conteudo-sobre-mim-memoji {

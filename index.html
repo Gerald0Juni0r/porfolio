@@ -16,25 +16,26 @@
 </head>
 <body>
     <header>
-        <img class="logo-cabecalho" src="IMG/logo.png" alt="logomarca escrito 'Geraldo Júnior'">
-        <nav id="menu-desktop" class="cabecalho">
-            <a href="#" class="menu">Inicio</a>
-            <a href="#SobreMim" class="menu">Sobre mim</a>
-            <a href="#Projetos" class="menu">Projetos</a>
-            <a href="#Habilidades" class="menu">Habilidades</a>
-            <a href="#Contato" class="menu">Contato</a>
-        </nav>
-        <nav class="menu-mobile">
-            <button id="menu-mobile-button"><img id="menu-mobile-button-imagem" src="IMG/menuMobile/menuMobile-closed.png" alt=""></button>
-        </nav>
-        <div class="menu-mobile-abrir">
-            <button class="menu-mobile-fechar" id="menu-mobile-button"><img id="menu-mobile-button-imagem" src="IMG/menuMobile/menuMobile-open.png" alt=""></button>
-            <a href="#" class="menu">Inicio</a>
-            <a href="#SobreMim" class="menu">Sobre mim</a>
-            <a href="#Projetos" class="menu">Projetos</a>
-            <a href="#Habilidades" class="menu">Habilidades</a>
-            <a href="#Contato" class="menu">Contato</a>
-        </div>
+        <img class="logo-cabecalho" src="IMG/logo-white.png" alt="logomarca escrito 'Geraldo Júnior'">
+        <nav id="nav">
+            <div id="menu-desktop" class="cabecalho">
+                <a href="#" class="menu">Inicio</a>
+                <a href="#SobreMim" class="menu">Sobre mim</a>
+                <a href="#Projetos" class="menu">Projetos</a>
+                <a href="#Habilidades" class="menu">Habilidades</a>
+                <a href="#Contato" class="menu">Contato</a>
+            </div>
+            <div class="menu-mobile">
+                <button onclick="menuShow()" id="menu-mobile-button"><img id="menu-mobile-button-img" src="IMG/menuMobile/menuMobile-closed.png" alt=""></button>
+            </div>
+            <div class="menu-mobile-section">
+                <a href="#" class="menu">Inicio</a>
+                <a href="#SobreMim" class="menu">Sobre mim</a>
+                <a href="#Projetos" class="menu">Projetos</a>
+                <a href="#Habilidades" class="menu">Habilidades</a>
+                <a href="#Contato" class="menu">Contato</a>
+            </div>
+        </nav>        
     </header>
     <main class="conteudo">
         <section class="conteudo-home">
@@ -57,9 +58,6 @@
                         <br><br>
                         Busco atuar na área de tecnologia, contribuindo com minhas habilidades e competências de forma responsável na condição de colaborador efetivo ou temporário.
                     </p>
-                    <a href="curriculo/Curriculo_GeraldoJr.pdf" download>
-                        <button class="conteudo-sobre-mim-button">CURRÍCULO<img src="IMG/icone-download.png" alt="icone de download"></button>
-                    </a>
                 </div>
             </div>
         </section>
