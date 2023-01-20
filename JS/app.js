@@ -1,11 +1,11 @@
-// Botão VoltaTopo desaparece ao chegar perto do home
+// BOTÃO VOLTA-TOPO DESAPARECE AO CHEGAR PERTO DO HOME
 window.addEventListener('scroll', function() {
     let scroll = this.document.querySelector('.div-arrow-img');
     scroll.classList.toggle('active', this.window.scrollY > 250);
 });
 
-// Animação de surgimento das informações de cada section
-// USANDO DEBOUNCE FUNCTION
+// ANIMAÇÃO DE SURGIMENTO DAS INFORMAÇÕES DE CADA SECTION
+// usando o debounce function
 let debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
@@ -25,7 +25,8 @@ let target = document.querySelectorAll('[data-anime]');
 let animationClass = 'animate';
 
 function animeScroll() {
-    let windowTop =window.pageYOffset + (window.innerHeight * 3) / 4;
+    // let windowTop =window.pageYOffset + (window.innerHeight * 3) / 4;
+    let windowTop =window.pageYOffset + 600;
     target.forEach(function(element) {
         if ((windowTop) > element.offsetTop) {
             element.classList.add(animationClass);
@@ -37,59 +38,26 @@ function animeScroll() {
 
 animeScroll();
 
-// ATIVANDO O DEBOUNCE FUNCTION
+// ativando o debounce function
 if (target.length) {
     window.addEventListener('scroll', debounce(function() {
         animeScroll();
-    }, 150));
+    }, 0.5));
 } 
 
 
 
-
-
-
-
-
-
-
-
-// function anime() {
-//     const windowTop = window.scrollY + ((window.innerHeight * 3) / 4);
-//     target.forEach(function(element) {
-//         if((windowTop) > element.offsetTop) {
-//             element.classList.add('animar')
-//         } else {
-//             element.classList.remove('animar')
-//         }
-
-//     })
-// }
-// if(target.length) {
-// window.addEventListener('scroll', debounce(function(){
-//     // console.log('conte')
-//     anime()
-//     console.log('dsad')
-// }, 200));
-// }
-// function debounce(fn, delay) {
-//     let timer = null
-//     return function() {
-//         clearTimeout(timer)
-//         timer = setTimeout(function() {
-//             fn()
-//         }, delay)
-//     }
-// }
-
+// ANIMAÇÃO DOS PROJETOS
+let card = document.querySelector('.card');
+card.addEventListener('click', (event) =>{
+    card.classList.toggle('flip')
+});
 
 
 
 
 
 // MENU MOBILE
-
-
 let menuMobile = document.querySelector('.menu-mobile-section');
 
 // function toggleMenu() {

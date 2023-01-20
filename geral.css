@@ -13,14 +13,13 @@ html {
 body {
     /* Se algo passar do tamanho ideal, não ficará vísivel */
     overflow-x: hidden;
-    min-width: 100%;
-    min-height: 100%;
     color: #CED4DA;
-
-    background: #161f50;
+    background-color: #161f50;
+    margin-left: auto;
+    margin-right: auto;
 }
 .title {
-    margin-top: 1%;
+    margin-top: 5%;
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -54,17 +53,13 @@ header nav a {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     font-size: 15px;
-}
-header nav a:first-child {
-    padding-left: 0;
+    position: relative;
 }
 .logo-cabecalho {
     margin: 20px 0;
 }
 .menu {
-    text-decoration: none;
     color: #CED4DA;
-    position: relative;
 }
 /* ANIMAÇÃO DO MENU */
 .menu::after {
@@ -80,11 +75,7 @@ header nav a:first-child {
 .menu:hover::after {
     width: 100%;
 }
-#menu-desktop {
-    display: flex;
-    align-items: center;
-}
-.menu-mobile, .menu-mobile-section {
+#menu-mobile, .menu-mobile-section {
     display: none;
 }
 .menu-mobile-abrir,
@@ -124,7 +115,7 @@ header nav a:first-child {
 }
 .conteudo-home-paragrafo-carreira {
     margin-top: -4%;
-    border-right: 3px solid #CED4DA;
+    border-right: 2px solid #CED4DA;
     font-size: 25px;
     width: 260px;
     height: 35px;
@@ -146,7 +137,7 @@ header nav a:first-child {
 /* Animação de piscar "|" */
 @keyframes Pisca {
     from {
-        border-right-color: rgba(3, 3, 3, 1);
+        border-right-color: #CED4DA;
     }
     to{
         border-right: none;
@@ -159,7 +150,7 @@ header nav a:first-child {
 }
 /* SOBRE MIM */
 .conteudo-sobre-mim {
-    padding: 3% 0;
+    padding: 3% auto;
 }
 .conteudo-sobre-mim-div-principal {
     display: flex;
@@ -168,8 +159,6 @@ header nav a:first-child {
     justify-content: space-around;
 }
 .conteudo-sobre-mim-memoji {
-    /* animation: animate__fadeInUp 1s normal; */
-
     width: 290px;
     height: 460px;
     margin: 10% 0 9%;
@@ -185,8 +174,10 @@ header nav a:first-child {
 }
 /* PROJETOS */
 .conteudo-projetos {
-    padding: 4% 0 13%;
+    padding: 2% 0 10%;
 }
+
+
 .conteudo-div-projetos {
     display: flex;
     align-items: center;
@@ -198,14 +189,6 @@ header nav a:first-child {
     margin: 0 10%;
     list-style: none;
 } 
-.projetos {
-    background: #88ABFF;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 2%;
-}
 .projetos a {
     margin-bottom: -4px;
 }
@@ -221,9 +204,50 @@ header nav a:first-child {
 .conteudo-projetos p {
     padding-bottom: 2%;
 }
+.projetos {
+    background: #88ABFF;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+
+
+/* ANIMAÇÃO DOS PROJETOS */
+.card {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+.face {
+    width: 200px;
+    height: 180px;
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    color: #CED4DA;
+    position: absolute;
+}
+.projetos-frente {
+    background: #88ABFF;
+    transform: rotateY(180deg);
+}
+.projetos-costas {
+    background: #040813;
+    backface-visibility: hidden;
+}
+.flip {
+    transform: rotateY(180deg);
+}
+
+
 /* HABILIDADES */
 .conteudo-habilidades {
-    padding: 4% 0 10%;
+    padding: 4% 0%;
 }
 .conteudo-div-skills {
     margin: 5% 0 0 8%;
@@ -254,14 +278,12 @@ header nav a:first-child {
 .conteudo-contato-memoji {
     width: 420px;
     height: 420px;
-    margin: 9% 0 10%;
+    margin: 5% 0;
 }
 .conteudo-contato-principal{
     display: flex;
-    flex-direction: row;
     align-items: center;
-
-    margin: 0 20%;
+    justify-content: center;
 }
 .conteudo-contato-paragrafo-com-redes-sociais {
     display: flex;
@@ -285,8 +307,7 @@ header nav a:first-child {
 .redes-sociais {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
     margin: 10px;
 }
 .redes-sociais-img {
@@ -300,8 +321,6 @@ header nav a:first-child {
 }
 /* FOOTER */
 footer {
-    background: transparent;
-
     text-align: center;
     padding: 20px 0;
 }
@@ -312,9 +331,7 @@ footer {
     height: 40px;
     right: 3%;
     bottom: 5%;
-
     animation: arrowAnimation 1s ease-in-out infinite;
-
     opacity: 0;
     visibility: hidden;
 }
@@ -330,15 +347,12 @@ footer {
 /* ANIMAÇÃO */
 [data-anime] {
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 /* Animação de surgimento das informações de cada section */
 [data-anime="top"] {
     transform: translate3d(0, -50px, 0);
-}
-[data-anime="bottom"] {
-    transform: translate3d(-100px, 0, 0);
 }
 [data-anime="left"] {
     transform: translate3d(-100px, 0, 0);
@@ -406,7 +420,7 @@ footer {
     #menu-desktop {
         display: none;
     }
-    .menu-mobile {
+    #menu-mobile {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -420,32 +434,30 @@ footer {
         color: #CED4DA;
     }
     .menu-mobile-section {
+        margin-top: 5px;
         display: none;
         padding-top: 1.2rem;
-        position: relative;
-        /* background: #fff;
-        width: 200px;
-        margin-top: 50%; */
+        position: absolute;
+        /* background-color: #131b44; */
+        background-color: #161f50;
+        width: 50%;
+        height: 95%;
+        left: 50%;
     }
     .menu-mobile-section a {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10% 0;
+        justify-content: start;
+        padding-left: 5%;
     }
     .open {
-        display: block;
+        display:block;
     }
     .menu {
-        color: red;
-        padding: 10%;
-        position: absolute;
-        /* height: calc(100vh - 60px);
-        top: 60px;
-        right: 0px; */
-        
-
+        text-align: center;
+        left: 0;
+        color: #CED4DA;
+        padding: 10% 5%;
     }
     .logo-cabecalho {
         width: 100px;
