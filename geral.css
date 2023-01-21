@@ -278,7 +278,7 @@ header nav a {
 .conteudo-contato-memoji {
     width: 420px;
     height: 420px;
-    margin: 5% 0;
+    margin: 4% 0 5%;
 }
 .conteudo-contato-principal{
     display: flex;
@@ -438,7 +438,6 @@ footer {
         display: none;
         padding-top: 1.2rem;
         position: absolute;
-        /* background-color: #131b44; */
         background-color: #161f50;
         width: 50%;
         height: 95%;
