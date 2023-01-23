@@ -176,8 +176,6 @@ header nav a {
 .conteudo-projetos {
     padding: 2% 0 10%;
 }
-
-
 .conteudo-div-projetos {
     display: flex;
     align-items: center;
@@ -231,9 +229,6 @@ header nav a {
     opacity: 1;
     transition: 0.5s;
 }
-
-
-
 /* ANIMAÇÃO DOS PROJETOS */
 .card {
     display: flex;
@@ -262,8 +257,6 @@ header nav a {
 .flip {
     transform: rotateY(180deg);
 }
-
-
 /* HABILIDADES */
 .conteudo-habilidades {
     padding: 4% 0%;
@@ -363,12 +356,11 @@ footer {
         transform: translateY(15px);
     }
 }
-/* ANIMAÇÃO */
+/* ANIMAÇÃO SECTIONS */
 [data-anime] {
     opacity: 0;
     transition: 0.2s;
 }
-
 /* Animação de surgimento das informações de cada section */
 [data-anime="top"] {
     transform: translate3d(0, -50px, 0);
@@ -383,8 +375,7 @@ footer {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
-
-/* Altura da tela de desktops de até 635px */
+/* Altura da tela de desktops de até 670px */
 @media (max-height: 670px) {
     /* HOME */
     .conteudo-home-memoji {
@@ -429,6 +420,7 @@ footer {
         margin: 5% 0 7%;
     }
 }
+
 /* MOBILE */
 @media (max-width: 999px) {
     /* Para sections -> Sobre mim, Projetos, Habilidades e Contato */
